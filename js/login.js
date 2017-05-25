@@ -32,6 +32,7 @@ function existeNombreUsuario() {
             },
             error: function(a, b, c) {
                 toastr.error("Error de conexión " + a + " " + b + " " + c );
+                toastr.error("Error de conexión");
             }
         });
     } else {
