@@ -30,8 +30,8 @@ function existeNombreUsuario() {
                     toastr.error("El nombre de usuario<br><b>" + nombreUsuario + "</b><br>no existe");
                 }
             },
-            error: function() {
-                toastr.error("Error de conexión");
+            error: function(a, b, c) {
+                toastr.error("Error de conexión " + a + " " + b + " " + c );
             }
         });
     } else {
