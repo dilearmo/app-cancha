@@ -31,8 +31,8 @@ function existeNombreUsuario() {
                 }
             },
             error: function(a, b, c) {
-                toastr.info("Error de conexión " + a + " " + b + " " + c );
-                toastr.info("Error de conexión");
+                toastr.error("Error de conexión " + a + " " + b + " " + c );
+                toastr.error("Error de conexión");
             }
         });
     } else {
