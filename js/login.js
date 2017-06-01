@@ -49,7 +49,7 @@ $(document).ready(function() {
     }
     
     var statusChangeCallback = function(response, callback) {
-        console.log(response);
+        toastr.info('statudChangeCallback');
         if(response.status === 'connected') {
             getFacebookData();
         } else {
@@ -59,7 +59,9 @@ $(document).ready(function() {
     }
     
     var checkLoginState = function(callback) {
+        toastr.info('checkLoginState');
         FB.getLoginStatus(function(response) {
+            toastr.info('FB.getLoginStatus');
             statusChangeCallback(response, function(data) {
                 callback(data);
             });
@@ -67,8 +69,10 @@ $(document).ready(function() {
     }
     
     var getFacebookData = function() {
+        toastr.info('getFacebookData');
         FB.api('/me', {fields: 'name,email'}, function(response) {
             // guardar sesi[on]
+            toastr.info('FB.api obteniendo datos');
             toastr.error('Bienvenido ' + response.name + ' ' + response.id + ' ' + response.email);
             var img = document.createElement('img');
             img.setAttribute('src', 'http://graph.facebook.com/' + response.id + '/picture/type=large');
@@ -77,6 +81,7 @@ $(document).ready(function() {
     }
     
     var facebookLogin = function() {
+        toastr.info('facebookLogin');
         checkLoginState(function(response) {
             if(!response) {
                 FB.login(function(response) {
