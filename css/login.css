@@ -216,3 +216,9 @@ input[type=text]:focus:not([readonly]) {
   border-bottom: 1px solid rgb(233,76,61);
   box-shadow: 0 1px 0 0 rgb(233,76,61);
 }
+
+#FBlogin {
+  margin-top: 10px;
+  background-color: #3B5998;
+  color: white;
+}

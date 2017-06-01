@@ -69,10 +69,10 @@ $(document).ready(function() {
     var getFacebookData = function() {
         FB.api('/me', {fields: 'name,email'}, function(response) {
             // guardar sesi[on]
-            //console.error('Bienvenido ' + response.name + ' ' + response.id + ' ' + response.email);
-            //var img = document.createElement('img');
-            //img.setAttribute('src', 'http://graph.facebook.com/' + response.id + '/picture/type=large');
-            //$("#login").append(img);
+            toastr.error('Bienvenido ' + response.name + ' ' + response.id + ' ' + response.email);
+            var img = document.createElement('img');
+            img.setAttribute('src', 'http://graph.facebook.com/' + response.id + '/picture/type=large');
+            $("#login").append(img);
         });
     }
     
