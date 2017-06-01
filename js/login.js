@@ -27,7 +27,7 @@ $(document).ready(function() {
         toastr.info("Lo sentimos,<br>su teléfono no es<br>compatible con esta<br>aplicación");
     }
     
-    var app_id = '1061872230622284';
+    var app_id = '1061872230622284'; // También va en el config.xml con el nombre de la app de ese id
     var scopes = 'email, public_profile';
     
     window.fbAsyncInit = function() {
@@ -89,6 +89,8 @@ $(document).ready(function() {
                         getFacebookData();
                     }
                 }, { scope: scopes });
+            } else {
+                toastr.info('No respuesta en facebookLogin');
             }
         });
     }
