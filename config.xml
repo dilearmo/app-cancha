@@ -85,7 +85,7 @@
     </platform>
     
     
-    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.10.1" source="plugins.cordova.io">
+    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.10.1">
         <param name="APP_ID" value="1061872230622284" />
         <param name="APP_NAME" value="AdminAppCancha" />
     </gap:plugin>
