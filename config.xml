@@ -50,7 +50,7 @@
     <string>100</string>
     </gap:config-file>
  
-    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.9.0">
+    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.13.0">
         <param name="APP_ID" value="1061872230622284" />
         <param name="APP_NAME" value="AdminAppCancha" />
     </gap:plugin>
