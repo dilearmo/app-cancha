@@ -84,9 +84,4 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     
-    
-    <plugin name="phonegap-facebook-plugin" source="npm" > 
-     <param name="APP_ID" value="ID" />
-    <param name="APP_NAME" value="NAME" />
-</plugin>
 </widget>
