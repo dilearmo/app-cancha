@@ -85,8 +85,8 @@
     </platform>
     
     
-    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.12.0">
-        <param name="APP_ID" value="1061872230622284" />
-        <param name="APP_NAME" value="AdminAppCancha" />
-    </gap:plugin>
+    <plugin name="phonegap-facebook-plugin" source="npm" > 
+     <param name="APP_ID" value="ID" />
+    <param name="APP_NAME" value="NAME" />
+</plugin>
 </widget>
